@@ -1,0 +1,10 @@
+CREATE DATABASE airflow;
+CREATE DATABASE analytics;
+
+CREATE USER collector WITH PASSWORD 'collector';
+ALTER ROLE collector WITH LOGIN;
+
+GRANT ALL PRIVILEGES ON DATABASE collector TO collector;
+GRANT ALL PRIVILEGES ON DATABASE airflow TO collector;
+
+

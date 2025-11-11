@@ -1,0 +1,9 @@
+api_url: "https://api.coingecko.com/api/v3/coins/markets"
+assets:
+  - bitcoin
+  - ethereum
+target_dsn: "postgres://collector:collector@postgres:5432/collector?sslmode=disable"
+queue_topic: "raw_prices"
+poll_interval: "5m"
+
+

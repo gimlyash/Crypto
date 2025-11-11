@@ -1,0 +1,6 @@
+dsn: "postgres://aggregator:aggregator@postgres:5432/collector?sslmode=disable"
+window: "15m"
+limit: 1000
+dry_run: false
+
+
